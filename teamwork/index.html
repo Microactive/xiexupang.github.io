@@ -550,5 +550,18 @@
     <script type="text/javascript" src="/js/love.js"></script>
 <% } %>
 <!-- 页面点击小红心》 -->
+
+<!--鼠标点击烟花爆炸效果，需要引入jQuery-->
+<% if (theme.fireworks){ %>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+<% } %>
+
+<!--单击显示文字-->
+<% if (theme.click_show_text){ %>
+    <script type="text/javascript" src="/js/click_show_text.js"></script>
+<% } %>
+
 </body>
 </html>
