@@ -552,13 +552,10 @@
     <script type="text/javascript" src="/js/click_show_text.js"></script>
 <% } %>
 
-<!-- 雪花特效 -->
-<script type="text/javascript">
-  var windowWidth = $(window).width();
-  if (windowWidth > 480) {
-    document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
-  }
-</script>
+<!-- 雪花特效3 -->
+<% if (theme.snow){ %>
+  <script type="text/javascript" src="/js/snow.js"></script>
+<% } %>
 
 
 </body>
