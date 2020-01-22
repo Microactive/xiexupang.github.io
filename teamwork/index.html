@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="云智能垃圾分类项目组">
 <meta property="og:description" content="图像识别：徐灏、吴俊宇、谢旭庞 语音识别：谢旭庞、刘宗昊 硬件电路设计：刘宗昊 服务器端：周松毅 系统搭建与调试：赖翰钊、谢育锋、刘宗昊">
 <meta property="article:published_time" content="2020-01-20T14:06:30.000Z">
-<meta property="article:modified_time" content="2020-01-20T14:54:01.676Z">
+<meta property="article:modified_time" content="2020-01-20T15:01:55.321Z">
 <meta property="article:author" content="谢旭庞">
 <meta name="twitter:card" content="summary">
 
@@ -551,12 +551,19 @@
 <% } %>
 <!-- 页面点击小红心》 -->
 
-
-
 <!--单击显示文字-->
 <% if (theme.click_show_text){ %>
     <script type="text/javascript" src="/js/click_show_text.js"></script>
 <% } %>
+
+<!-- 雪花特效 -->
+<script type="text/javascript">
+  var windowWidth = $(window).width();
+  if (windowWidth > 480) {
+    document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+  }
+</script>
+
 
 </body>
 </html>
